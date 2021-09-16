@@ -1,0 +1,1221 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03E6710F0039F9951CBA1569CC986217 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		0DC110F27344AFEB494F757C728C94B1 /* FrameworkMedia.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B65D206F9D09AC1B5118A8CF574637FA /* FrameworkMedia.xcassets */; };
+		20F8835DAFDC0BD8B5909F01156BB071 /* Pods-BlindMatrixTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5415F27C1297DB237C7910FF7856F33C /* Pods-BlindMatrixTests-dummy.m */; };
+		24BA4D5D1F16648F66CE82879C9F92BE /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 726174BF91D90017BBB938F0CDA8A6F7 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		35B26008F398A95E00F7DA259444914F /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A207A4E6273B81A286C5D953FCCB41 /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4B73B386F18C087F79B7F941A9986680 /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE0A7C0FC186A7AF11D4123DEC95709 /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BBF370CE70069596A860D5BED292B95 /* Pods-BlindMatrixTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51147E10224A68FC2B1C434183EB527D /* Pods-BlindMatrixTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4ECF5718853AD0744FE6E028F4EB11A9 /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4466C15016A033B5469381F6074C54 /* TPKeyboardAvoiding-dummy.m */; };
+		4F2CD2ED85DC86D497A42A61A626C847 /* HUDStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3115A7868296404F9F77BAC0EAB34D2A /* HUDStyle.swift */; };
+		4F6DE9BC7143D4C38F4B46D8AEF3A669 /* Pods-BlindMatrix-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F09FDD400DE7F747142FF7EB2DE353F /* Pods-BlindMatrix-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		516E36F7D0921267BA0AC219980C1ABF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		634BA282ED5A8A40D3DD2D336F1212D0 /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECFF13FB7DB4D1410201E80E77599D5 /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71AA4E3C8DC9EBB12F8BF5F36E47F24A /* APESuperHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6628D8E11ABF1640DF55A4D693D21103 /* APESuperHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		882E3E7DC32E5AFB8F503F65EE5D2497 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		912524D3ED3A35D18C66C9246F029DF7 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5783F4D6FD35A9682842AAA1BFB7CF /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		93B1DBE92214E07066E6E4FA76657537 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		953284C2D522831BD6D13AA304535117 /* HudAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C9033C66CEEC86E68DB1F012459B07 /* HudAppearance.swift */; };
+		A491C7B4444F3315EE5951A3F54EB030 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		A65FB5AC1496253642E2833C910DAD99 /* Pods-BlindMatrix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEBF51E97B6159E624CEE78294F5399 /* Pods-BlindMatrix-dummy.m */; };
+		AF9B88A2C96F4498D44C8BA2C747FD0D /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AC65D8FE5FBC7FCBF1912EF14F7A4 /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B7C33FF3250BA392F7B9B35A53938F2E /* APESuperHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90594F72991F0B12B64BB19EA2B562CB /* APESuperHUD-dummy.m */; };
+		B957D0566E20EDDE4C0D4C37F6DC3A1E /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7686008E8A714A48C47FFA4380B19890 /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFD14B5296084284FBAD52E1D401F570 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		CE7FD92387FDB0B41DDA21F2E469D41C /* APESuperHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9A8DDA0081C443F46D1804E9346E95 /* APESuperHUD.swift */; };
+		D06D05EDB538E470C3AB10CCED0B8246 /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CACDF29F69AB58887AEBA1E35FE1118 /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3CCAA905F95EEB2D59FB82D469300CB /* APESuperHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B0943735B3D2E4836BEE1A44D7ED31 /* APESuperHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8AA7123448D1F68748833F36E7467BB /* APESuperHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C23A82BAAEF6C1770C8065AF16F18F0 /* APESuperHUD.xib */; };
+		F6C3A73CB95B495308CAB2F6A045B97C /* Pods-BlindMatrix-BlindMatrixUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE9FC885A88E9ABDEF7DF001B06FF9F /* Pods-BlindMatrix-BlindMatrixUITests-dummy.m */; };
+		F8F88D9221E3B395D644F6723CC27697 /* Pods-BlindMatrix-BlindMatrixUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4164CA1D1DFDFBCC189E5C8F3C27336 /* Pods-BlindMatrix-BlindMatrixUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9508F021609D9FC860D693247580C72 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A5B5E59CF6D1EF2BFEFA67A54B6E0887 /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		070C4838BA5502935F9982C3E1A77A87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EB14F33A6E3B75849301F88164019F4;
+			remoteInfo = APESuperHUD;
+		};
+		1101D6A80E21871A0CC67A632EE6F710 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EB14F33A6E3B75849301F88164019F4;
+			remoteInfo = APESuperHUD;
+		};
+		32DE21E27AB2B93DE2D251EFA40E5856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1343042EDCB23E2CA267E65C520F9395;
+			remoteInfo = TPKeyboardAvoiding;
+		};
+		60D459984CAEC89C96F0A80E3C2D84CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7930F7A6BF312556BEE67143B257F57D;
+			remoteInfo = "Pods-BlindMatrix";
+		};
+		7F99229D41BD23769944C4474E0B3BC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1343042EDCB23E2CA267E65C520F9395;
+			remoteInfo = TPKeyboardAvoiding;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		014B8F9DA9E52E399B2DFE8C5A126BCD /* Pods-BlindMatrix-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlindMatrix-frameworks.sh"; sourceTree = "<group>"; };
+		1DFA0066C97A782C5E5426370153A409 /* Pods_BlindMatrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlindMatrix.framework; path = "Pods-BlindMatrix.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FDEF145AA7B44E526E9E796C4A0ADC6 /* Pods-BlindMatrix-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlindMatrix-Info.plist"; sourceTree = "<group>"; };
+		21AA75DDF42F62942511FE7FF771BED6 /* APESuperHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = APESuperHUD.framework; path = APESuperHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B41B03810ABCB46528D003C422C1AF /* Pods-BlindMatrix-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlindMatrix-acknowledgements.markdown"; sourceTree = "<group>"; };
+		24782BB2A8FF11FAF71237E9B073679B /* Pods-BlindMatrix-BlindMatrixUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlindMatrix-BlindMatrixUITests-frameworks.sh"; sourceTree = "<group>"; };
+		2C833CAFD72FB47FFD72EF83C00FD1C5 /* Pods-BlindMatrixTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlindMatrixTests-Info.plist"; sourceTree = "<group>"; };
+		3115A7868296404F9F77BAC0EAB34D2A /* HUDStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HUDStyle.swift; path = Source/HUDStyle.swift; sourceTree = "<group>"; };
+		34955455CD7CB1C96853695AEF52DDF5 /* Pods-BlindMatrix-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlindMatrix-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B216105E3BED762AFE1284A6DF8B797 /* TPKeyboardAvoiding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.release.xcconfig; sourceTree = "<group>"; };
+		3D08D701651F64FD74D3243560F88937 /* APESuperHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APESuperHUD.release.xcconfig; sourceTree = "<group>"; };
+		422864C3F8D6EAC2FD2085FCFD27AA43 /* TPKeyboardAvoiding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.debug.xcconfig; sourceTree = "<group>"; };
+		43C9033C66CEEC86E68DB1F012459B07 /* HudAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HudAppearance.swift; path = Source/HudAppearance.swift; sourceTree = "<group>"; };
+		479096EE05B27B9731E74FD303BB2168 /* Pods-BlindMatrix-BlindMatrixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlindMatrix-BlindMatrixUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		49323CD53459D0739DBD62296212CA33 /* APESuperHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "APESuperHUD-Info.plist"; sourceTree = "<group>"; };
+		4A773F32AE9D4DEA49EA115DD37AD481 /* Pods-BlindMatrix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlindMatrix.debug.xcconfig"; sourceTree = "<group>"; };
+		4AE0A7C0FC186A7AF11D4123DEC95709 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		51147E10224A68FC2B1C434183EB527D /* Pods-BlindMatrixTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlindMatrixTests-umbrella.h"; sourceTree = "<group>"; };
+		5415F27C1297DB237C7910FF7856F33C /* Pods-BlindMatrixTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlindMatrixTests-dummy.m"; sourceTree = "<group>"; };
+		553D7E70CB4E6AA9AB89BC3F48F7EEAB /* Pods-BlindMatrix-BlindMatrixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlindMatrix-BlindMatrixUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5D245B5E92269EB7770662B16ED04CEB /* Pods-BlindMatrixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlindMatrixTests.debug.xcconfig"; sourceTree = "<group>"; };
+		60A207A4E6273B81A286C5D953FCCB41 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		6628D8E11ABF1640DF55A4D693D21103 /* APESuperHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APESuperHUD-umbrella.h"; sourceTree = "<group>"; };
+		67241A369499053804755BFA29A7D564 /* Pods-BlindMatrix-BlindMatrixUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlindMatrix-BlindMatrixUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6B9586491F9EFAC4FC6AFF324959ED80 /* Pods-BlindMatrixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlindMatrixTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E4466C15016A033B5469381F6074C54 /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
+		726174BF91D90017BBB938F0CDA8A6F7 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		728D57AF576926AD7081C1B7FCF6E9EC /* Pods-BlindMatrixTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlindMatrixTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7686008E8A714A48C47FFA4380B19890 /* TPKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
+		793DD2F3A8BFA18A3BF45A4FA2A04909 /* APESuperHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APESuperHUD-prefix.pch"; sourceTree = "<group>"; };
+		7AFE1891488F02A05F838692F94EA3F2 /* Pods-BlindMatrix-BlindMatrixUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BlindMatrix-BlindMatrixUITests.modulemap"; sourceTree = "<group>"; };
+		7CE9B32D059AC04E64A9EBB345539A3D /* Pods-BlindMatrixTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BlindMatrixTests.modulemap"; sourceTree = "<group>"; };
+		7F09FDD400DE7F747142FF7EB2DE353F /* Pods-BlindMatrix-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlindMatrix-umbrella.h"; sourceTree = "<group>"; };
+		804E57ECD08D355CB8869BDE1AF7B005 /* APESuperHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = APESuperHUD.modulemap; sourceTree = "<group>"; };
+		85C8ABA5314452AE31DAA5AE55BBBC1F /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPKeyboardAvoiding.framework; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CACDF29F69AB58887AEBA1E35FE1118 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		8D0AC65D8FE5FBC7FCBF1912EF14F7A4 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		8D5E3368A33650386503F68328B75356 /* APESuperHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APESuperHUD.debug.xcconfig; sourceTree = "<group>"; };
+		8ECFF13FB7DB4D1410201E80E77599D5 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		90594F72991F0B12B64BB19EA2B562CB /* APESuperHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "APESuperHUD-dummy.m"; sourceTree = "<group>"; };
+		956468DB6CF0785400B3CDC611EDD11B /* Pods-BlindMatrix.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BlindMatrix.modulemap"; sourceTree = "<group>"; };
+		97B0943735B3D2E4836BEE1A44D7ED31 /* APESuperHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APESuperHUD.h; path = Source/APESuperHUD.h; sourceTree = "<group>"; };
+		9C23A82BAAEF6C1770C8065AF16F18F0 /* APESuperHUD.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = APESuperHUD.xib; path = Resources/APESuperHUD.xib; sourceTree = "<group>"; };
+		9C9E8A4D925C190D9B706D618A4870DB /* Pods_BlindMatrix_BlindMatrixUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlindMatrix_BlindMatrixUITests.framework; path = "Pods-BlindMatrix-BlindMatrixUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CEBF51E97B6159E624CEE78294F5399 /* Pods-BlindMatrix-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlindMatrix-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5B5E59CF6D1EF2BFEFA67A54B6E0887 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		AC5783F4D6FD35A9682842AAA1BFB7CF /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		AEEFF1866FB374FF50BDEBC8F3869078 /* Pods-BlindMatrixTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlindMatrixTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B4164CA1D1DFDFBCC189E5C8F3C27336 /* Pods-BlindMatrix-BlindMatrixUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlindMatrix-BlindMatrixUITests-umbrella.h"; sourceTree = "<group>"; };
+		B43F1E4E658D8EE9A4D4B84DDAA33ECF /* Pods-BlindMatrix-BlindMatrixUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlindMatrix-BlindMatrixUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B4BA53AAC738D4988A54D2C661F3FDFF /* TPKeyboardAvoiding-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TPKeyboardAvoiding-Info.plist"; sourceTree = "<group>"; };
+		B65D206F9D09AC1B5118A8CF574637FA /* FrameworkMedia.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = FrameworkMedia.xcassets; path = Resources/FrameworkMedia.xcassets; sourceTree = "<group>"; };
+		BB6244C2047F95C35790A71A852C0983 /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
+		BD9F257F4C139C4224D4DD5AFD70EBBA /* Pods_BlindMatrixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlindMatrixTests.framework; path = "Pods-BlindMatrixTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F9F403110E99B1F03AD1DC3F3F4D9E /* Pods-BlindMatrix-BlindMatrixUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlindMatrix-BlindMatrixUITests-Info.plist"; sourceTree = "<group>"; };
+		C7FF1537B4B36CAE78B81DE231990E56 /* Pods-BlindMatrix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlindMatrix.release.xcconfig"; sourceTree = "<group>"; };
+		CAE9FC885A88E9ABDEF7DF001B06FF9F /* Pods-BlindMatrix-BlindMatrixUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlindMatrix-BlindMatrixUITests-dummy.m"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DE9A8DDA0081C443F46D1804E9346E95 /* APESuperHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APESuperHUD.swift; path = Source/APESuperHUD.swift; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F3797000C9D1240AF3C19BA004A331DD /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A86586999CC3E4BC8B5BEBBCFDCA8AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A491C7B4444F3315EE5951A3F54EB030 /* Foundation.framework in Frameworks */,
+				882E3E7DC32E5AFB8F503F65EE5D2497 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BDA1A0539B30239E65BE3B949DD41FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93B1DBE92214E07066E6E4FA76657537 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E3172CD4DB590FC20F3072095BD8407 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD14B5296084284FBAD52E1D401F570 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9822C4945A9A17C596D1A632557826AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E6710F0039F9951CBA1569CC986217 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F958CB5B5EDC8216E072AF513F2BF576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				516E36F7D0921267BA0AC219980C1ABF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		145E91E4BC32D105404B49255DF1FB72 /* APESuperHUD */ = {
+			isa = PBXGroup;
+			children = (
+				97B0943735B3D2E4836BEE1A44D7ED31 /* APESuperHUD.h */,
+				DE9A8DDA0081C443F46D1804E9346E95 /* APESuperHUD.swift */,
+				43C9033C66CEEC86E68DB1F012459B07 /* HudAppearance.swift */,
+				3115A7868296404F9F77BAC0EAB34D2A /* HUDStyle.swift */,
+				C23658BB39AFA7EC15FB78F669F575F8 /* Resources */,
+				A6464A893B7146684D75DAC22D8C0DFA /* Support Files */,
+			);
+			name = APESuperHUD;
+			path = APESuperHUD;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		192230058438F32602C7F4CC817C200F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				145E91E4BC32D105404B49255DF1FB72 /* APESuperHUD */,
+				1F6C473F9DF8214D9D1824E5140C780A /* TPKeyboardAvoiding */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1F6C473F9DF8214D9D1824E5140C780A /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				8CACDF29F69AB58887AEBA1E35FE1118 /* TPKeyboardAvoidingCollectionView.h */,
+				AC5783F4D6FD35A9682842AAA1BFB7CF /* TPKeyboardAvoidingCollectionView.m */,
+				4AE0A7C0FC186A7AF11D4123DEC95709 /* TPKeyboardAvoidingScrollView.h */,
+				60A207A4E6273B81A286C5D953FCCB41 /* TPKeyboardAvoidingScrollView.m */,
+				8ECFF13FB7DB4D1410201E80E77599D5 /* TPKeyboardAvoidingTableView.h */,
+				8D0AC65D8FE5FBC7FCBF1912EF14F7A4 /* TPKeyboardAvoidingTableView.m */,
+				A5B5E59CF6D1EF2BFEFA67A54B6E0887 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				726174BF91D90017BBB938F0CDA8A6F7 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				5AB2A69CEA9C98C81C3344CECB191102 /* Support Files */,
+			);
+			name = TPKeyboardAvoiding;
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5AB2A69CEA9C98C81C3344CECB191102 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3797000C9D1240AF3C19BA004A331DD /* TPKeyboardAvoiding.modulemap */,
+				6E4466C15016A033B5469381F6074C54 /* TPKeyboardAvoiding-dummy.m */,
+				B4BA53AAC738D4988A54D2C661F3FDFF /* TPKeyboardAvoiding-Info.plist */,
+				BB6244C2047F95C35790A71A852C0983 /* TPKeyboardAvoiding-prefix.pch */,
+				7686008E8A714A48C47FFA4380B19890 /* TPKeyboardAvoiding-umbrella.h */,
+				422864C3F8D6EAC2FD2085FCFD27AA43 /* TPKeyboardAvoiding.debug.xcconfig */,
+				3B216105E3BED762AFE1284A6DF8B797 /* TPKeyboardAvoiding.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TPKeyboardAvoiding";
+			sourceTree = "<group>";
+		};
+		670AB70CF6C9D4E9D102E7F9A0635DB7 /* Pods-BlindMatrix */ = {
+			isa = PBXGroup;
+			children = (
+				956468DB6CF0785400B3CDC611EDD11B /* Pods-BlindMatrix.modulemap */,
+				22B41B03810ABCB46528D003C422C1AF /* Pods-BlindMatrix-acknowledgements.markdown */,
+				34955455CD7CB1C96853695AEF52DDF5 /* Pods-BlindMatrix-acknowledgements.plist */,
+				9CEBF51E97B6159E624CEE78294F5399 /* Pods-BlindMatrix-dummy.m */,
+				014B8F9DA9E52E399B2DFE8C5A126BCD /* Pods-BlindMatrix-frameworks.sh */,
+				1FDEF145AA7B44E526E9E796C4A0ADC6 /* Pods-BlindMatrix-Info.plist */,
+				7F09FDD400DE7F747142FF7EB2DE353F /* Pods-BlindMatrix-umbrella.h */,
+				4A773F32AE9D4DEA49EA115DD37AD481 /* Pods-BlindMatrix.debug.xcconfig */,
+				C7FF1537B4B36CAE78B81DE231990E56 /* Pods-BlindMatrix.release.xcconfig */,
+			);
+			name = "Pods-BlindMatrix";
+			path = "Target Support Files/Pods-BlindMatrix";
+			sourceTree = "<group>";
+		};
+		7FCB1860B3749F761F618578026F719C /* Pods-BlindMatrix-BlindMatrixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7AFE1891488F02A05F838692F94EA3F2 /* Pods-BlindMatrix-BlindMatrixUITests.modulemap */,
+				67241A369499053804755BFA29A7D564 /* Pods-BlindMatrix-BlindMatrixUITests-acknowledgements.markdown */,
+				B43F1E4E658D8EE9A4D4B84DDAA33ECF /* Pods-BlindMatrix-BlindMatrixUITests-acknowledgements.plist */,
+				CAE9FC885A88E9ABDEF7DF001B06FF9F /* Pods-BlindMatrix-BlindMatrixUITests-dummy.m */,
+				24782BB2A8FF11FAF71237E9B073679B /* Pods-BlindMatrix-BlindMatrixUITests-frameworks.sh */,
+				C0F9F403110E99B1F03AD1DC3F3F4D9E /* Pods-BlindMatrix-BlindMatrixUITests-Info.plist */,
+				B4164CA1D1DFDFBCC189E5C8F3C27336 /* Pods-BlindMatrix-BlindMatrixUITests-umbrella.h */,
+				479096EE05B27B9731E74FD303BB2168 /* Pods-BlindMatrix-BlindMatrixUITests.debug.xcconfig */,
+				553D7E70CB4E6AA9AB89BC3F48F7EEAB /* Pods-BlindMatrix-BlindMatrixUITests.release.xcconfig */,
+			);
+			name = "Pods-BlindMatrix-BlindMatrixUITests";
+			path = "Target Support Files/Pods-BlindMatrix-BlindMatrixUITests";
+			sourceTree = "<group>";
+		};
+		9345456FF9189539FDD9B2F51BFC8D55 /* Pods-BlindMatrixTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CE9B32D059AC04E64A9EBB345539A3D /* Pods-BlindMatrixTests.modulemap */,
+				AEEFF1866FB374FF50BDEBC8F3869078 /* Pods-BlindMatrixTests-acknowledgements.markdown */,
+				728D57AF576926AD7081C1B7FCF6E9EC /* Pods-BlindMatrixTests-acknowledgements.plist */,
+				5415F27C1297DB237C7910FF7856F33C /* Pods-BlindMatrixTests-dummy.m */,
+				2C833CAFD72FB47FFD72EF83C00FD1C5 /* Pods-BlindMatrixTests-Info.plist */,
+				51147E10224A68FC2B1C434183EB527D /* Pods-BlindMatrixTests-umbrella.h */,
+				5D245B5E92269EB7770662B16ED04CEB /* Pods-BlindMatrixTests.debug.xcconfig */,
+				6B9586491F9EFAC4FC6AFF324959ED80 /* Pods-BlindMatrixTests.release.xcconfig */,
+			);
+			name = "Pods-BlindMatrixTests";
+			path = "Target Support Files/Pods-BlindMatrixTests";
+			sourceTree = "<group>";
+		};
+		A6464A893B7146684D75DAC22D8C0DFA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				804E57ECD08D355CB8869BDE1AF7B005 /* APESuperHUD.modulemap */,
+				90594F72991F0B12B64BB19EA2B562CB /* APESuperHUD-dummy.m */,
+				49323CD53459D0739DBD62296212CA33 /* APESuperHUD-Info.plist */,
+				793DD2F3A8BFA18A3BF45A4FA2A04909 /* APESuperHUD-prefix.pch */,
+				6628D8E11ABF1640DF55A4D693D21103 /* APESuperHUD-umbrella.h */,
+				8D5E3368A33650386503F68328B75356 /* APESuperHUD.debug.xcconfig */,
+				3D08D701651F64FD74D3243560F88937 /* APESuperHUD.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/APESuperHUD";
+			sourceTree = "<group>";
+		};
+		AB1E2905E24B0AF37EB0AA3BCEF0F897 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				670AB70CF6C9D4E9D102E7F9A0635DB7 /* Pods-BlindMatrix */,
+				7FCB1860B3749F761F618578026F719C /* Pods-BlindMatrix-BlindMatrixUITests */,
+				9345456FF9189539FDD9B2F51BFC8D55 /* Pods-BlindMatrixTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AD4112547DB09C194363AE53E4C52C03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21AA75DDF42F62942511FE7FF771BED6 /* APESuperHUD.framework */,
+				1DFA0066C97A782C5E5426370153A409 /* Pods_BlindMatrix.framework */,
+				9C9E8A4D925C190D9B706D618A4870DB /* Pods_BlindMatrix_BlindMatrixUITests.framework */,
+				BD9F257F4C139C4224D4DD5AFD70EBBA /* Pods_BlindMatrixTests.framework */,
+				85C8ABA5314452AE31DAA5AE55BBBC1F /* TPKeyboardAvoiding.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C23658BB39AFA7EC15FB78F669F575F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C23A82BAAEF6C1770C8065AF16F18F0 /* APESuperHUD.xib */,
+				B65D206F9D09AC1B5118A8CF574637FA /* FrameworkMedia.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				192230058438F32602C7F4CC817C200F /* Pods */,
+				AD4112547DB09C194363AE53E4C52C03 /* Products */,
+				AB1E2905E24B0AF37EB0AA3BCEF0F897 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3A65FC9DDA99D19CB3E24612FFF9F8BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBF370CE70069596A860D5BED292B95 /* Pods-BlindMatrixTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E83212A74B9CE42AE7917CD65C5383E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F88D9221E3B395D644F6723CC27697 /* Pods-BlindMatrix-BlindMatrixUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E04751771D3895EEACA5156FA44783C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71AA4E3C8DC9EBB12F8BF5F36E47F24A /* APESuperHUD-umbrella.h in Headers */,
+				E3CCAA905F95EEB2D59FB82D469300CB /* APESuperHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99A78EC6A10192A70B0A88D8A2162821 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B957D0566E20EDDE4C0D4C37F6DC3A1E /* TPKeyboardAvoiding-umbrella.h in Headers */,
+				D06D05EDB538E470C3AB10CCED0B8246 /* TPKeyboardAvoidingCollectionView.h in Headers */,
+				4B73B386F18C087F79B7F941A9986680 /* TPKeyboardAvoidingScrollView.h in Headers */,
+				634BA282ED5A8A40D3DD2D336F1212D0 /* TPKeyboardAvoidingTableView.h in Headers */,
+				F9508F021609D9FC860D693247580C72 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D9F4CB069C3F1579877E26F5667288 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F6DE9BC7143D4C38F4B46D8AEF3A669 /* Pods-BlindMatrix-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1343042EDCB23E2CA267E65C520F9395 /* TPKeyboardAvoiding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D21340E2988550B457B0BA36C23955 /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */;
+			buildPhases = (
+				99A78EC6A10192A70B0A88D8A2162821 /* Headers */,
+				0CBD45C49DEFF0E02407E6419A7A34EB /* Sources */,
+				F958CB5B5EDC8216E072AF513F2BF576 /* Frameworks */,
+				64AC7CAD8B1BAF00C6C1C435B4CB03A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPKeyboardAvoiding;
+			productName = TPKeyboardAvoiding;
+			productReference = 85C8ABA5314452AE31DAA5AE55BBBC1F /* TPKeyboardAvoiding.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7048B7E139BA58628A4559E59E3BACF6 /* Pods-BlindMatrix-BlindMatrixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21248D0AFDE395038A76154A70E8A202 /* Build configuration list for PBXNativeTarget "Pods-BlindMatrix-BlindMatrixUITests" */;
+			buildPhases = (
+				4E83212A74B9CE42AE7917CD65C5383E /* Headers */,
+				C67A13FA5F920B24F40BD07E9A843728 /* Sources */,
+				9822C4945A9A17C596D1A632557826AD /* Frameworks */,
+				5E3D730822AF6358759E66873446901C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C70F6C36BF63F883CFD4D9DA3730EB4A /* PBXTargetDependency */,
+				EB81F7BC2AECECB4D214D57AAA960915 /* PBXTargetDependency */,
+			);
+			name = "Pods-BlindMatrix-BlindMatrixUITests";
+			productName = "Pods-BlindMatrix-BlindMatrixUITests";
+			productReference = 9C9E8A4D925C190D9B706D618A4870DB /* Pods_BlindMatrix_BlindMatrixUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7930F7A6BF312556BEE67143B257F57D /* Pods-BlindMatrix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F47F42FD109C3E0E9953A61FCAF474C /* Build configuration list for PBXNativeTarget "Pods-BlindMatrix" */;
+			buildPhases = (
+				F0D9F4CB069C3F1579877E26F5667288 /* Headers */,
+				3E3801A12036633D7F0955838BEBB6D6 /* Sources */,
+				6E3172CD4DB590FC20F3072095BD8407 /* Frameworks */,
+				9064FAAE30C1AECC30F9F7426385E2DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8151EC9B4E22CC25B678F72810B50E2 /* PBXTargetDependency */,
+				007663FA5FB5120CA36F340C86E2C84D /* PBXTargetDependency */,
+			);
+			name = "Pods-BlindMatrix";
+			productName = "Pods-BlindMatrix";
+			productReference = 1DFA0066C97A782C5E5426370153A409 /* Pods_BlindMatrix.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9EB14F33A6E3B75849301F88164019F4 /* APESuperHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A888DFF4605D85C6A10CAD6D800BFB47 /* Build configuration list for PBXNativeTarget "APESuperHUD" */;
+			buildPhases = (
+				6E04751771D3895EEACA5156FA44783C /* Headers */,
+				64675A6D9A675F39F38DC8DF790D99C4 /* Sources */,
+				1A86586999CC3E4BC8B5BEBBCFDCA8AB /* Frameworks */,
+				6062AA1B46A5B4A08739D8154678BF20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APESuperHUD;
+			productName = APESuperHUD;
+			productReference = 21AA75DDF42F62942511FE7FF771BED6 /* APESuperHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C5BA7B9D494AF715EF34B15EDEAAC53B /* Pods-BlindMatrixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77B5515AA09EBF3C182B23CB0B3E695B /* Build configuration list for PBXNativeTarget "Pods-BlindMatrixTests" */;
+			buildPhases = (
+				3A65FC9DDA99D19CB3E24612FFF9F8BF /* Headers */,
+				A064B691BF48DFF039CD0457E65B453C /* Sources */,
+				5BDA1A0539B30239E65BE3B949DD41FD /* Frameworks */,
+				53E059ABA2F99F4BCBFDE0607927A64B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF30869EFB67303D2B3BFBD162BFA819 /* PBXTargetDependency */,
+			);
+			name = "Pods-BlindMatrixTests";
+			productName = "Pods-BlindMatrixTests";
+			productReference = BD9F257F4C139C4224D4DD5AFD70EBBA /* Pods_BlindMatrixTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = AD4112547DB09C194363AE53E4C52C03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EB14F33A6E3B75849301F88164019F4 /* APESuperHUD */,
+				7930F7A6BF312556BEE67143B257F57D /* Pods-BlindMatrix */,
+				7048B7E139BA58628A4559E59E3BACF6 /* Pods-BlindMatrix-BlindMatrixUITests */,
+				C5BA7B9D494AF715EF34B15EDEAAC53B /* Pods-BlindMatrixTests */,
+				1343042EDCB23E2CA267E65C520F9395 /* TPKeyboardAvoiding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53E059ABA2F99F4BCBFDE0607927A64B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E3D730822AF6358759E66873446901C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6062AA1B46A5B4A08739D8154678BF20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8AA7123448D1F68748833F36E7467BB /* APESuperHUD.xib in Resources */,
+				0DC110F27344AFEB494F757C728C94B1 /* FrameworkMedia.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64AC7CAD8B1BAF00C6C1C435B4CB03A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9064FAAE30C1AECC30F9F7426385E2DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CBD45C49DEFF0E02407E6419A7A34EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ECF5718853AD0744FE6E028F4EB11A9 /* TPKeyboardAvoiding-dummy.m in Sources */,
+				912524D3ED3A35D18C66C9246F029DF7 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				35B26008F398A95E00F7DA259444914F /* TPKeyboardAvoidingScrollView.m in Sources */,
+				AF9B88A2C96F4498D44C8BA2C747FD0D /* TPKeyboardAvoidingTableView.m in Sources */,
+				24BA4D5D1F16648F66CE82879C9F92BE /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E3801A12036633D7F0955838BEBB6D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A65FB5AC1496253642E2833C910DAD99 /* Pods-BlindMatrix-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64675A6D9A675F39F38DC8DF790D99C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7C33FF3250BA392F7B9B35A53938F2E /* APESuperHUD-dummy.m in Sources */,
+				CE7FD92387FDB0B41DDA21F2E469D41C /* APESuperHUD.swift in Sources */,
+				953284C2D522831BD6D13AA304535117 /* HudAppearance.swift in Sources */,
+				4F2CD2ED85DC86D497A42A61A626C847 /* HUDStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A064B691BF48DFF039CD0457E65B453C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F8835DAFDC0BD8B5909F01156BB071 /* Pods-BlindMatrixTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C67A13FA5F920B24F40BD07E9A843728 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3A73CB95B495308CAB2F6A045B97C /* Pods-BlindMatrix-BlindMatrixUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		007663FA5FB5120CA36F340C86E2C84D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPKeyboardAvoiding;
+			target = 1343042EDCB23E2CA267E65C520F9395 /* TPKeyboardAvoiding */;
+			targetProxy = 32DE21E27AB2B93DE2D251EFA40E5856 /* PBXContainerItemProxy */;
+		};
+		B8151EC9B4E22CC25B678F72810B50E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APESuperHUD;
+			target = 9EB14F33A6E3B75849301F88164019F4 /* APESuperHUD */;
+			targetProxy = 1101D6A80E21871A0CC67A632EE6F710 /* PBXContainerItemProxy */;
+		};
+		C70F6C36BF63F883CFD4D9DA3730EB4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APESuperHUD;
+			target = 9EB14F33A6E3B75849301F88164019F4 /* APESuperHUD */;
+			targetProxy = 070C4838BA5502935F9982C3E1A77A87 /* PBXContainerItemProxy */;
+		};
+		EB81F7BC2AECECB4D214D57AAA960915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPKeyboardAvoiding;
+			target = 1343042EDCB23E2CA267E65C520F9395 /* TPKeyboardAvoiding */;
+			targetProxy = 7F99229D41BD23769944C4474E0B3BC3 /* PBXContainerItemProxy */;
+		};
+		EF30869EFB67303D2B3BFBD162BFA819 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BlindMatrix";
+			target = 7930F7A6BF312556BEE67143B257F57D /* Pods-BlindMatrix */;
+			targetProxy = 60D459984CAEC89C96F0A80E3C2D84CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E7EC38D654C2B47CC5A40C273E61644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A773F32AE9D4DEA49EA115DD37AD481 /* Pods-BlindMatrix.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlindMatrix/Pods-BlindMatrix-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlindMatrix/Pods-BlindMatrix.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1A838E42742237D70A968076ED432FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 479096EE05B27B9731E74FD303BB2168 /* Pods-BlindMatrix-BlindMatrixUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlindMatrix-BlindMatrixUITests/Pods-BlindMatrix-BlindMatrixUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlindMatrix-BlindMatrixUITests/Pods-BlindMatrix-BlindMatrixUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		433C70450BC1D5BF3FCFD3F90A01598D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D08D701651F64FD74D3243560F88937 /* APESuperHUD.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/APESuperHUD/APESuperHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/APESuperHUD/APESuperHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/APESuperHUD/APESuperHUD.modulemap";
+				PRODUCT_MODULE_NAME = APESuperHUD;
+				PRODUCT_NAME = APESuperHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		716F3D134B6C9E826E0A5C623D82A24A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 422864C3F8D6EAC2FD2085FCFD27AA43 /* TPKeyboardAvoiding.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				PRODUCT_MODULE_NAME = TPKeyboardAvoiding;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		797275A2CAC19C3E3FC21712FC1656D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D5E3368A33650386503F68328B75356 /* APESuperHUD.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/APESuperHUD/APESuperHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/APESuperHUD/APESuperHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/APESuperHUD/APESuperHUD.modulemap";
+				PRODUCT_MODULE_NAME = APESuperHUD;
+				PRODUCT_NAME = APESuperHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7BFABEEE987F00847A3483D7263DFB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B9586491F9EFAC4FC6AFF324959ED80 /* Pods-BlindMatrixTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlindMatrixTests/Pods-BlindMatrixTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlindMatrixTests/Pods-BlindMatrixTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DB6CDF168ED2FC6693C479765DBF6BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D245B5E92269EB7770662B16ED04CEB /* Pods-BlindMatrixTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlindMatrixTests/Pods-BlindMatrixTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlindMatrixTests/Pods-BlindMatrixTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFDFE500687A235E7F6CCE5E9A5585C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B216105E3BED762AFE1284A6DF8B797 /* TPKeyboardAvoiding.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				PRODUCT_MODULE_NAME = TPKeyboardAvoiding;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED2090CA66210EE288708E1AC71AC057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553D7E70CB4E6AA9AB89BC3F48F7EEAB /* Pods-BlindMatrix-BlindMatrixUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlindMatrix-BlindMatrixUITests/Pods-BlindMatrix-BlindMatrixUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlindMatrix-BlindMatrixUITests/Pods-BlindMatrix-BlindMatrixUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9E6E26247237D8C77C8E2BC60CE74DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7FF1537B4B36CAE78B81DE231990E56 /* Pods-BlindMatrix.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlindMatrix/Pods-BlindMatrix-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlindMatrix/Pods-BlindMatrix.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21248D0AFDE395038A76154A70E8A202 /* Build configuration list for PBXNativeTarget "Pods-BlindMatrix-BlindMatrixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A838E42742237D70A968076ED432FAB /* Debug */,
+				ED2090CA66210EE288708E1AC71AC057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
+				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77B5515AA09EBF3C182B23CB0B3E695B /* Build configuration list for PBXNativeTarget "Pods-BlindMatrixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6CDF168ED2FC6693C479765DBF6BD4 /* Debug */,
+				7BFABEEE987F00847A3483D7263DFB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F47F42FD109C3E0E9953A61FCAF474C /* Build configuration list for PBXNativeTarget "Pods-BlindMatrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E7EC38D654C2B47CC5A40C273E61644 /* Debug */,
+				F9E6E26247237D8C77C8E2BC60CE74DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A888DFF4605D85C6A10CAD6D800BFB47 /* Build configuration list for PBXNativeTarget "APESuperHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				797275A2CAC19C3E3FC21712FC1656D0 /* Debug */,
+				433C70450BC1D5BF3FCFD3F90A01598D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5D21340E2988550B457B0BA36C23955 /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				716F3D134B6C9E826E0A5C623D82A24A /* Debug */,
+				DFDFE500687A235E7F6CCE5E9A5585C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

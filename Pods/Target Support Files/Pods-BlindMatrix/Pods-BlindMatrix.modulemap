@@ -1,0 +1,6 @@
+framework module Pods_BlindMatrix {
+  umbrella header "Pods-BlindMatrix-umbrella.h"
+
+  export *
+  module * { export * }
+}
