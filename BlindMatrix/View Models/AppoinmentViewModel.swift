@@ -77,7 +77,7 @@ class AppoinmentListtblDataSource : GenericDataSource<Appointment_type_list>,UIT
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.delegate?.didSelecttableView(data: self.data.value[indexPath.row].type_users ?? nil)
+        self.delegate?.didSelecttableView(data: self.data.value[indexPath.row].type_users ?? nil, name: Themes.shared.checkNull(self.data.value[indexPath.row].typename))
     }
     
     
@@ -85,5 +85,5 @@ class AppoinmentListtblDataSource : GenericDataSource<Appointment_type_list>,UIT
 
 
 protocol didSelectUser {
-    func didSelecttableView(data: [Type_users]?)
+    func didSelecttableView(data: [Type_users]?, name:String)
 }

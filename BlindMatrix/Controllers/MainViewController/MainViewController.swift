@@ -16,12 +16,11 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func didTapTask1(_ sender: Any) {
-        
+        VC_List.setASRootVC()
     }
     
     @IBAction func didTapTask2(_ sender: Any) {
-        let vc = setVC_FromID(viewControllerID: VC_List.loginVC, storyBoardName: .second) as! LoginViewController
-        self.navigationController?.pushViewController(vc, animated: true)
+        VC_List.setLoginASRootVC()
     }
     /*
     // MARK: - Navigation

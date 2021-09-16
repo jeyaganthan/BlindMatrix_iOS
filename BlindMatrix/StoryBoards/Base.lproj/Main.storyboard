@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="69.715142428785612"/>
+            <point key="canvasLocation" x="2919.1999999999998" y="69.715142428785612"/>
         </scene>
         <!--Usertype Lis View Controller-->
         <scene sceneID="W0n-WH-ccN">
@@ -163,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xn2-GR-5Ax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2727.1999999999998" y="69.715142428785612"/>
+            <point key="canvasLocation" x="3666.4000000000001" y="69.715142428785612"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="E8E-ju-CGY">
@@ -179,16 +179,28 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="teC-OK-PGv">
                                         <rect key="frame" x="0.0" y="0.0" width="257" height="108"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaF-gt-CeW">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaF-gt-CeW" customClass="CustomButton" customModule="BlindMatrix" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="257" height="49"/>
-                                                <state key="normal" title="Task 1"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <state key="normal" title="System Task 1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundedCorner" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="didTapTask1:" destination="r0W-2m-Nvj" eventType="touchUpInside" id="pmh-Yi-TOs"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcW-kN-tf7">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcW-kN-tf7" customClass="CustomButton" customModule="BlindMatrix" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="59" width="257" height="49"/>
-                                                <state key="normal" title="Task 2"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <state key="normal" title="System Task 2">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRoundedCorner" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="didTapTask2:" destination="r0W-2m-Nvj" eventType="touchUpInside" id="dwU-Ac-vWu"/>
                                                 </connections>
@@ -240,6 +252,23 @@
             </objects>
             <point key="canvasLocation" x="-914.39999999999998" y="69.715142428785612"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jXz-2j-1KI">
+            <objects>
+                <navigationController storyboardIdentifier="rootVCID" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="fAa-RG-WIO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zNy-1F-fEW">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bGc-As-xLL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVE-B7-8ZU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="69.715142428785612"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="AccentColor">
@@ -247,6 +276,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

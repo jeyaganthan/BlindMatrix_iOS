@@ -12,7 +12,7 @@ class UsertypeLisViewController: UIViewController {
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var tblUserType: UITableView!
     let dataSource = TypeUserstblDataSource()
-   // let title : String = ""
+    var titleStr : String = ""
     lazy var viewModel : TypeUsersViewModel = {
         let viewModel = TypeUsersViewModel()
           return viewModel
@@ -20,7 +20,7 @@ class UsertypeLisViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.lblTitle.text = titleStr
         self.tblUserType.register(UINib(nibName: "UserTypeTableViewCell", bundle: nil), forCellReuseIdentifier: "user")
         self.tblUserType.dataSource = self.dataSource
         self.setInitial()

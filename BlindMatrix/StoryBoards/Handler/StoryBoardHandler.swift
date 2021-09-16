@@ -24,6 +24,7 @@ public enum AppStoryBoard : String{
 }
 
 class VC_List {
+    static let AppoinmentUserRootVCID = "rootVCID"
     static let AppoinmentUserVCID = "UserListVCID"
     static let typeUserVC = "typeUserVC"
     
@@ -47,6 +48,16 @@ class VC_List {
     static func setSignupASRootVC(){
         let mainStoryBoard = UIStoryboard(name: "SecondTask", bundle: nil)
         let mainInitialVC:UIViewController = mainStoryBoard.instantiateViewController(withIdentifier: VC_List.signupRootVC)
+        let appdelegate = UIApplication.shared.delegate as! AppDelegate
+       // appdelegate.window = UIWindow(frame: UIScreen.main.bounds)
+        appdelegate.window?.rootViewController = mainInitialVC
+        appdelegate.window?.makeKeyAndVisible()
+    }
+
+    
+    static func setASRootVC(){
+        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        let mainInitialVC:UIViewController = mainStoryBoard.instantiateViewController(withIdentifier: VC_List.AppoinmentUserRootVCID)
         let appdelegate = UIApplication.shared.delegate as! AppDelegate
        // appdelegate.window = UIWindow(frame: UIScreen.main.bounds)
         appdelegate.window?.rootViewController = mainInitialVC

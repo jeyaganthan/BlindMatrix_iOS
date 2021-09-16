@@ -73,11 +73,13 @@ class AppoinmentUsersViewController: UIViewController,UITextFieldDelegate {
 
 
 extension AppoinmentUsersViewController : didSelectUser {
-    func didSelecttableView(data: [Type_users]?) {
+    func didSelecttableView(data: [Type_users]?, name: String) {
         let vc = setVC_FromID(viewControllerID: VC_List.typeUserVC, storyBoardName: .Main) as! UsertypeLisViewController
         vc.dataSource.data.value = data!
+        vc.titleStr = name
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
     
     
 }

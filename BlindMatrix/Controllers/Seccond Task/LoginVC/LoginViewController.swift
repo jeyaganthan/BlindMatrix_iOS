@@ -48,7 +48,7 @@ class LoginViewController: UIViewController {
         }
         
         let emailCount = DatabaseHandler.sharedInstance.countForDataForTable(Entityname: "Login", attribute: "email", FetchString: email)
-        if !emailCount  {
+        if emailCount  {
             let data = DatabaseHandler.sharedInstance.FetchFromDatabase(Entityname: "Login", attribute: "email", FetchString: email, SortDescriptor: nil) as! NSArray
             
             let managedObj = data[0] as! NSManagedObject
@@ -58,7 +58,7 @@ class LoginViewController: UIViewController {
                 NotificationMessage.shared.showSucess("Login succesfully")
                 return
             } else {
-                NotificationMessage.shared.showError("Invalid Password")
+                NotificationMessage.shared.showError("Incorrect Password")
                 return
             }
         }else {
