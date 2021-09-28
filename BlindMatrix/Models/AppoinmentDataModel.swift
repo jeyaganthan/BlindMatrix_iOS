@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 struct Appointment_Base : Codable {
     let status : String?
@@ -220,6 +221,8 @@ struct Priority_list : Codable {
     }
 
 }
+
+
 
 
 

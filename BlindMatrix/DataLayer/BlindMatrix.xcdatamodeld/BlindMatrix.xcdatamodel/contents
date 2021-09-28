@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Appoinment_type_users" representedClassName=".Appoinment_type_users" syncable="YES" codeGenerationType="class">
+        <attribute name="typeid" optional="YES" attributeType="String"/>
+        <attribute name="typename" optional="YES" attributeType="String"/>
+        <relationship name="typeusers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Typeusers" inverseName="appoinment" inverseEntity="Typeusers"/>
+    </entity>
+    <entity name="Customer_Type" representedClassName=".Customer_Type" syncable="YES" codeGenerationType="class">
+        <attribute name="cust_Type" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="Login" representedClassName="Login" syncable="YES" codeGenerationType="class">
         <attribute name="address" optional="YES" attributeType="String"/>
         <attribute name="email" optional="YES" attributeType="String"/>
@@ -8,7 +16,19 @@
         <attribute name="phone" optional="YES" attributeType="String"/>
         <attribute name="username" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="Order_Status" representedClassName="Order_Status" syncable="YES" codeGenerationType="class">
+        <attribute name="status" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Typeusers" representedClassName=".Typeusers" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="user_name" optional="YES" attributeType="String"/>
+        <relationship name="appoinment" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Appoinment_type_users" inverseName="typeusers" inverseEntity="Appoinment_type_users"/>
+    </entity>
     <elements>
-        <element name="Login" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="Appoinment_type_users" positionX="117" positionY="72" width="128" height="88"/>
+        <element name="Customer_Type" positionX="214.7146606445312" positionY="15.47821044921875" width="128" height="44"/>
+        <element name="Login" positionX="-63" positionY="-18" width="128" height="133"/>
+        <element name="Order_Status" positionX="347.0741577148438" positionY="66.90229797363281" width="128" height="44"/>
+        <element name="Typeusers" positionX="473.8463745117188" positionY="329.4577026367188" width="128" height="88"/>
     </elements>
 </model>

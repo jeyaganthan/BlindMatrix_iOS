@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+import CoreData
+
 
 
 struct AppoinmentViewModel {
@@ -31,6 +33,58 @@ struct AppoinmentViewModel {
             case .none:
                
                 if Themes.shared.checkNull(result?.status) == "success"{
+                    DispatchQueue.main.async {
+                    
+                        guard let appoinmnetData = result?.appointment_type_list else {return}
+                        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                                return
+                        }
+                        let managedContext = appDelegate.persistentContainer.viewContext
+                        if let cust_type = result?.customer_type, let order = result?.order_status {
+                            for type in cust_type {
+                                let typeData = Customer_Type(context: managedContext)
+                                typeData.cust_Type = Themes.shared.checkNull(type)
+                                do {
+                                    try managedContext.save()
+                                }catch {
+                                    print(error)
+                                }
+                            }
+                            
+                            for status in order {
+                                let orderstatus = Order_Status(context: managedContext)
+                                orderstatus.status = Themes.shared.checkNull(status)
+                                do {
+                                    try managedContext.save()
+                                }catch {
+                                    print(error)
+                                }
+                            }
+                        }
+                        for appoinment in appoinmnetData {
+                            do {
+                                let object = Appoinment_type_users(context: managedContext)
+                                object.typename = Themes.shared.checkNull(appoinment.typename)
+                                object.typeid = Themes.shared.checkNull(appoinment.typeid)
+                                guard let typeUsers = appoinment.type_users else {
+                                    continue
+                                }
+                                var AnyVal = [Typeusers]()
+                                for typeUser in typeUsers {
+                                    let new = Typeusers(context: managedContext)
+                                    new.user_name = Themes.shared.checkNull(typeUser.user_name)
+                                    new.id = Themes.shared.checkNull(typeUser.id)
+                                    AnyVal.append(new)
+                                }
+                                object.typeusers = NSSet.init(array: AnyVal)
+                                try managedContext.save()
+                            }
+                            catch {
+                                print(error)
+                            }
+                            
+                        }
+                    }
                     if let cust_type = result?.customer_type, let order = result?.order_status {
                         self.dataInfo(Themes.shared.checkNull(result?.message),order,cust_type,Themes.shared.checkNull(result?.default_cust_type),Themes.shared.checkNull(result?.default_order_status))
                     }else {
